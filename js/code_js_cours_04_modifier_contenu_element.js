@@ -68,13 +68,13 @@ $(function() {
     
     
     // Supprimer un attribut
-    var divIdName = $('div').attr('id'); // Verifier presence et nom de id du 1er div
-    console.log('Nom id 1er div : ' + divIdName);
-    
-    
-    $('div').removeAttr('id'); // Supprimer ID
-    var divIdName = $('div').attr('id'); // Verifier presence et nom de id du 1er div
-    console.log('Nom id 1er div après suppression : ' + divIdName); // Retourne undefined car supprimer
+//    var divIdName = $('div').attr('id'); // Verifier presence et nom de id du 1er div
+//    console.log('Nom id 1er div : ' + divIdName);
+//    
+//    
+//    $('div').removeAttr('id'); // Supprimer ID
+//    var divIdName = $('div').attr('id'); // Verifier presence et nom de id du 1er div
+//    console.log('Nom id 1er div après suppression : ' + divIdName); // Retourne undefined car supprimer
 
     
     /* Accéder aux propriétés CSS */
@@ -170,4 +170,42 @@ $(function() {
     $('p:eq(4)').html('<a href="http://www.google.com">Moteur de recherche Google</a>'); // Modifier le contenu du p index 4
     var pIndex4 = $('p:eq(4)').html();
     console.log('p index 4 après modif : ' + pIndex4);
+    
+    
+    /*
+     * Position et taille des éléments
+     */
+//    var coordParent          = $('#parent').offset();   // Retourne les coordonnées du parent par rapport au document
+//    var coordEnfant          = $('#enfant').offset();   // Retourne les coordonnées du child par rapport au document
+//    var coordParentRelative  = $('#parent').position(); // Retourne position au div parent
+//    var coordEnfantRelative  = $('#enfant').position(); // Retourne la position relative par rapport au parent
+//    console.log(coordParent);
+//    console.log(coordEnfant);
+//    console.log(coordParentRelative);
+//    console.log(coordEnfantRelative);
+//    // Afficher les coordonnées dans le span id resultat
+//    // Utilisation de HTML car insertion d'une balise <br> dans le code
+//    // Si aucune balise, possibilité d'utiliser la méthode text()
+//    $('#resultat').html('Parent : x = '          + coordParent.left         + ' , y = ' + coordParent.top         + ' -- ' +
+//                        'Enfant : x = '          + coordEnfant.left         + ' , y = ' + coordEnfant.top         + '<br>' +
+//                        'Parent relative : x = ' + coordParentRelative.left + ' , y = ' + coordParentRelative.top + ' -- ' +
+//                        'Enfant relative : x = ' + coordEnfantRelative.left + ' , y = ' + coordEnfantRelative.top);
+//                
+//    // Modifier la position absolue de enfant
+//    var newCoordEnfant = $('#enfant').offset(); // Création d'un objet jQuery contenant les coordonnées de enfant
+//    // Définir les nouvelles coordonnées de l'objet
+//    console.log(newCoordEnfant);
+//    newCoordEnfant.top = 100;
+//    newCoordEnfant.left = 250;
+//    $('#enfant').offset(newCoordEnfant);
+//    console.log(newCoordEnfant);
+    
+    // Connaitre les dimensions des éléments
+    var dimensions = 'width=' + $('#testDim').width() + ', innerWidth=' + $('#testDim').innerWidth() + ', outerWidth=' + $('#testDim').outerWidth() + ', outerWidth(true)=' + $('#testDim').outerWidth(true);
+    dimensions = dimensions + ', height=' + $('#testDim').height() + ', innerHeight=' + $('#testDim').innerHeight() + ', outerHeight=' + $('#testDim').outerHeight() + ', outerHeight(true)=' + $('#testDim').outerHeight(true);
+    $('#resultat').text(dimensions);
+    
+    // Modifier les dimensions d'un div
+//    $('div').width('400px');
+//    $('div').height('200px');
 });
