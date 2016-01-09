@@ -145,4 +145,29 @@ $(function() {
     
     // Bouton radio
     $(':radio').val(['answerRadios2']); // Sélectionne / Coche value 2
+    
+    
+    /*
+     * Travailler avec les valeurs stockées dans des éléments
+     */
+    var contentP = $('.docjquery').text();
+    console.log(contentP);
+    
+    $('p').text(function(index, actuel) {
+       console.log('Paragraphe ' + (index+1) + ' : ' + actuel); 
+    });
+    
+    console.log($('p').html());         // Affiche le code html du 1er élément
+    console.log($('p:first').html());   // Idem - Identique
+    console.log($('p:last').html());    // Affiche le code html du dernier élément
+    
+    $('p').html(function(index,actuel) { // Fonction pour afficher tous les codes HTML des éléments 
+        console.log('Paragraphe ' + (index+1) + ' : '+actuel);
+    });
+    
+    var pIndex4 = $('p:eq(4)').html();
+    console.log('p index 4 avant modif : ' + pIndex4);
+    $('p:eq(4)').html('<a href="http://www.google.com">Moteur de recherche Google</a>'); // Modifier le contenu du p index 4
+    var pIndex4 = $('p:eq(4)').html();
+    console.log('p index 4 après modif : ' + pIndex4);
 });
