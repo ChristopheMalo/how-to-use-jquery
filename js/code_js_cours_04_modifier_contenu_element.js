@@ -117,4 +117,32 @@ $(function() {
     } else {
         console.log('Le span #jean n\'est pas de classe rouge');
     }
+    
+    
+    /*
+     * Travailler avec les formulaires
+     */
+    // Prenom
+    var prenom = $('#prenom').val(); // Retourne le prenom du champ
+    console.log('Prenom avant modif : ' + prenom);
+    $('#prenom').val('Christophe'); // Renseigne le prenom
+    var prenom = $('#prenom').val(); // Retourne le prenom du champ
+    console.log('Prenom avant modif : ' + prenom);
+    
+    // Password
+    var password = $('#password').val(); // Retourne le password
+    console.log('Password avant modif : ' + password);
+    $('#password').val('TestPassword'); // Renseigne le password
+    var password = $('#password').val(); // Retourne le password
+    console.log('Password avant modif : ' + password);
+    
+    // Liste déroulante
+    var select = $('#pays').val(); // Retourne l'élément sélectionné dans la liste déroulante
+    console.log('Liste déroulante avant select : ' + select);
+    $('#pays').val('France'); // Selectione value 'France'
+    var select = $('#pays').val(); // Retourne l'élément sélectionné dans la liste déroulante
+    console.log('Liste déroulante après select : ' + select);
+    
+    // Bouton radio
+    $(':radio').val(['answerRadios2']); // Sélectionne / Coche value 2
 });
