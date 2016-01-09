@@ -208,4 +208,29 @@ $(function() {
     // Modifier les dimensions d'un div
 //    $('div').width('400px');
 //    $('div').height('200px');
+
+
+
+    /*
+     * Associer des données aux balises
+     */
+    // Exemple
+//    $(function() {
+//        var div = $('div')[0];
+//        $.data(div, 'mesValeurs', {premier: 'bonjour', deuxieme: 12, troisieme: 'http://www.url.com'});
+//        var val1 = $.data(div, 'mesValeurs').premier;
+//        var val2 = $.data(div, 'mesValeurs').deuxieme;
+//        var val3 = $.data(div, 'mesValeurs').troisieme;
+//        $('#sp1').text(val1);
+//        $('#sp2').text(val2);
+//        $('#sp3').text(val3);
+//    });
+    // Code HTML pour le résultat
+    //<div id="mondiv">
+    //<!--Les valeurs stockées dans la balise &lt;div&gt; sont : <span id="sp1"></span>, <span id="sp2"></span> et <span id="sp3"></span>.-->
+    //</div>
+    
+    // Supprimer la valeur
+//    var div = $('div')[0];
+//    $.removeData(div, 'mesValeurs');
 });
