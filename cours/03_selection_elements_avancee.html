@@ -31,8 +31,9 @@
             </div>
             <a class="btn btn-primary" href="../index.html" role="button" >Retour à l'index</a>
             
-            <h3 id="selecteurs-attributs">Sélecteurs d'attributs</h3>
+            
             <div class="row">
+                <h3 id="selecteurs-attributs">Sélecteurs d'attributs</h3>
                 <div class="col-xs-4"><img src="../images/cours_03/canard.jpg" alt="canard" title="animal canard" style="border: solid 11px #000;">
                 </div>
                 <div class="col-xs-4"><img src="../images/cours_03/chat.jpg" alt="chat" title="animal chat" style="border: solid 4px #000;"></div>
@@ -41,6 +42,174 @@
             <div class="row">
                 <div class="col-xs-4"><img src="../images/cours_03/chien.jpg" alt="chien" title="animal chien" style="border: solid 8px #000"></div>
                 <div class="col-xs-4"><img src="../images/cours_03/girafe.jpg" alt="girafe" title="girafe" style="border: solid 4px #000"></div>
+            </div>
+            
+            
+            <div id="listes" class="row">
+                <h3 id="selecteurs-hierarchiques">Sélecteurs hierarchiques</h3>
+                <ul id="ul1">
+                    <li> Elément de liste 1
+                        <ul id="ul2">
+                            <li> Enfant 1</li>
+                            <li> Enfant 2</li>
+                        </ul>
+                    </li>
+                    <li> Elément de liste 2</li>
+                    <li> Elément de liste 3</li>
+                    <li> Elément de liste 4</li>
+                </ul>
+            </div>
+            
+            <div class="row">
+            <h3>Pseudo-sélecteurs d'éléments sélectionnés</h3>
+                <div>
+                    <p>Paragraphe 1</p>
+                    <p>Paragraphe 2</p>
+                    <p>Paragraphe 3</p>
+                    <p>Paragraphe 4</p>
+                    <p>Paragraphe 5</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <h3>Sélecteurs d'éléments particuliers</h3>
+                <p>Ci-dessous un div caché d'origine</p>
+                <div id="divHidden"><p>Texte caché puis visible</p></div>
+            </div>
+            
+            
+            <div class="row">
+                <h3>Pseudo-sélecteurs spécifiques aux formulaires</h3>
+                <form class="form-horizontal col-sm-12" method="post" action="pages/form_resultat.php">
+                    <!-- Champ de saisie texte une ligne -->
+                    <div class="form-group form-group-lg">
+                        <label for="prenom" class="col-sm-2 control-label">Ton prénom : </label>
+                        <div class="col-sm-10 focus"> 
+                            <input class="form-control" type="text" name="prenom" id="prenom" placeholder="Ton prénom" required />
+                        </div>
+                    </div>
+                    
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">Ton mot de passe : </label>
+                        <div class="col-sm-10 focus"> 
+                            <input class="form-control" type="password" name="password" id="password" placeholder="Ton mot de passe" required />
+                        </div>
+                    </div>
+                    
+                    <!-- Champ de saisie texte multiligne -->
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Ton message : </label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" name="message" rows="10">Ton message ici.</textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Liste déroulante -->
+                    <div class="form-group">
+                        <label for="pays" class="col-sm-2 control-label">Votre pays : </label>
+                        <div class="col-sm-10">
+                            <select class="form-control input-lg" name="pays">
+                                <option value="Suisse">Suisse</option>
+                                <option value="Belgique">Belgique</option>
+                                <option value="France">France</option>
+                                <option value="Italie">Italie</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Case à cocher -->
+                    <h4><em>Un groupe de cases à cocher</em></h4>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label for="choix01">
+                                    <input type="checkbox" name="choix01" id="choix01"> Choix 1
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="choix02">
+                                    <input type="checkbox" name="choix02" id="choix02"> Choix 2
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="choix03">
+                                    <input type="checkbox" name="choix03" id="choix02"> Choix 3
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Boutons radio -->
+                    <h4><em>Un groupe de boutons radio</em></h4>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <p>Ici je pose bien une question ?</p>
+                            <div class="radio">
+                                <label for="answerRadios1">
+                                    <input type="radio" name="answerRadios" id="answerRadios1" value="answerRadios1" checked>
+                                    Ma réponse est un
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="answerRadios2">
+                                  <input type="radio" name="answerRadios" id="answerRadios2" value="answerRadios2">
+                                  Ma réponse est deux
+                                </label>
+                            </div>
+                            <div class="radio disabled">
+                                <label for="answerRadios3">
+                                  <input type="radio" name="answerRadios" id="answerRadios3" value="answerRadios3" disabled>
+                                  Ma réponse est trois - désactivée
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            
+            <div class="row">
+                <h3>Sélecteurs pour les tableaux</h3>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Salle 1</td>
+                        <td>Salle 2</td>
+                    </tr>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td></td><td>
+                            
+                        </td></tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td></td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>X</td>
+                        <td>X</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="row">
+                <h3>Parcourir les éléments sélectionnées et les remplacer</h3>
+                <img src="../images/cours_03/1/animal1.jpg" alt="animal1" class="img">
+                <img src="../images/cours_03/1/animal2.jpg" alt="animal2" class="img">
+                <img src="../images/cours_03/1/animal3.jpg" alt="animal3" class="img">
             </div>
             
         </div>
