@@ -6,3 +6,4 @@ Simplification du développement javascript avec jQuery
 - Modifier une balise HTML
 - Sélection d'éléments
 - Modifier le contenu d'un élément
+- Modifier le DOM
