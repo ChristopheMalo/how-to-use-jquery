@@ -68,5 +68,20 @@ $(function() {
     // Déplacer élément pUn avant un autre pDeux (au début, avant le texte et à l'intérieur de pDeux)
     // Sémantique incorrecte uniquement pour exemple
     //$('#pDeux').prepend($('#pUn'));
-
+    
+    /*
+     * Dupliquer des éléments
+     */
+    // Méthode possible : appendTo(), prependTo(), insertBefore() ou insertAfter()
+    // Dupliquer (Cloner) pDeux et insérer avant pUn
+    $('#pDeux').clone().insertBefore($('#pUn'));
+    
+    // Les descandants font parti du clonage - expemple -> liste à puce
+    // Dupliquer devant le premier titre h4
+    // $('ul').clone().insertBefore(($('h4:first')));
+    
+    // Création d'un sommaire (rapide sans liens)
+    $('<h2 id="sommaire">Sommaire</h2>').insertBefore($('h4:first'));
+    // Dupliquer tous les titres h4 et insérer dans le sommaire
+    $('h4').clone().insertAfter('#sommaire');
 });
