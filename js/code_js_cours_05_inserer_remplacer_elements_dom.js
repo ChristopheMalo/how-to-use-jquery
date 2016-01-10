@@ -24,6 +24,8 @@ $(function() {
     // $(selector).after(things-to-add);
     $('hr').after('<p>Test insert after</p>');
 
+
+
     /*
      * Remplacer des éléments
      */
@@ -38,6 +40,8 @@ $(function() {
        elementH3.replaceWith('<h4>' + elementH3.text() + '</h4>');
     });
     
+    
+    
     /*
      * Insérer des éléments
      */
@@ -50,7 +54,9 @@ $(function() {
     
     // Juste pour l'exemple car HTML incorrect - Incohérence sémantique
     // Insère une puce dans une autre puce - avant le texte
-    $('<li>Deuxième élément ter</li>').prependTo($('li:nth-child(2)'));
+    //$('<li>Deuxième élément ter</li>').prependTo($('li:nth-child(2)'));
+    
+    
     
     /*
      * Déplacer des éléments
@@ -69,6 +75,8 @@ $(function() {
     // Sémantique incorrecte uniquement pour exemple
     //$('#pDeux').prepend($('#pUn'));
     
+    
+    
     /*
      * Dupliquer des éléments
      */
@@ -84,4 +92,25 @@ $(function() {
     $('<h2 id="sommaire">Sommaire</h2>').insertBefore($('h4:first'));
     // Dupliquer tous les titres h4 et insérer dans le sommaire
     $('h4').clone().insertAfter('#sommaire');
+    
+    
+    /*
+     * Entourer des éléments
+     */
+    // Mettre en italique les li - 'entourer' les li des balises <i></i>
+    //$('li').wrap('<i></i>');
+    // Font en rouge, bold, italique et soulignée
+    $('li').wrap('<font color="red"><b><i><u></u></i></b></font>');
+    
+    // wrapAll - Rassemble tous les p de la page dans un div unique
+    $('p').wrapAll('<div id="wrapAll"></div>');
+    // Appliquer un style
+    $('#wrapAll').css({
+                        'background-color'  : '#ccc',
+                        'margin-bottom'     : '30px',
+                        'padding'           : '10px'
+                    });
+    // console.log($('#wrapAll > ')); // debug
+    // console.log($('#wrapAll > p:eq(0)')); // debug
+    $('#wrapAll > p:eq(0)').wrapInner('<strong></strong>'); // Balise placée autour du texte à l'intérieur du p
 });
