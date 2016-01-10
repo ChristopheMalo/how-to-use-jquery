@@ -51,5 +51,22 @@ $(function() {
     // Juste pour l'exemple car HTML incorrect - Incohérence sémantique
     // Insère une puce dans une autre puce - avant le texte
     $('<li>Deuxième élément ter</li>').prependTo($('li:nth-child(2)'));
+    
+    /*
+     * Déplacer des éléments
+     */
+    // Déplacer élément pUn après un autre pDeux
+    $('#pDeux').after($('#pUn'));
+    
+    // Déplacer élément pUn avant un autre pDeux (à la fin, après le texte et à l'intérieur de pDeux)
+    // Sémantique incorrecte uniquement pour exemple
+    // $('#pDeux').append($('#pUn'));
+    
+    // Déplacer élément pUn avant un autre pDeux
+    //$('#pDeux').before($('#pUn'));
+    
+    // Déplacer élément pUn avant un autre pDeux (au début, avant le texte et à l'intérieur de pDeux)
+    // Sémantique incorrecte uniquement pour exemple
+    //$('#pDeux').prepend($('#pUn'));
 
 });
