@@ -100,7 +100,7 @@ $(function() {
     // Mettre en italique les li - 'entourer' les li des balises <i></i>
     //$('li').wrap('<i></i>');
     // Font en rouge, bold, italique et soulignée
-    $('li').wrap('<font color="red"><b><i><u></u></i></b></font>');
+    //$('li').wrap('<font color="red"><b><i><u></u></i></b></font>');
     
     // wrapAll - Rassemble tous les p de la page dans un div unique
     $('p').wrapAll('<div id="wrapAll"></div>');
@@ -113,4 +113,14 @@ $(function() {
     // console.log($('#wrapAll > ')); // debug
     // console.log($('#wrapAll > p:eq(0)')); // debug
     $('#wrapAll > p:eq(0)').wrapInner('<strong></strong>'); // Balise placée autour du texte à l'intérieur du p
+
+
+    /*
+     * Supprimer des éléments
+     */
+    // $('h4').remove(); // Supprime tous les h4 du document
+    $('li:nth-child(2)').remove(); // Supprime la 3ème puce du ul
+    $('p').remove(':contains("Lorem")'); // Supprime les paragraphes contenant 'Lorem'
+    
+    $('p').css('background-color', 'yellow'); // Modifier couleur fond paragraphe
 });
