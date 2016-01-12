@@ -4,8 +4,10 @@
  * 
  */
 $(function() {
-    // La souris
-    // Déplacer une image aléatoirement en cliquant dessus
+    /*
+     * La souris
+     */
+    /* Déplacer une image aléatoirement en cliquant dessus */
     // Trouver la position initiale de l'image
     // console.log($('#imgToMove').offset());
 
@@ -31,4 +33,18 @@ $(function() {
       $('#imgToMove').offset(p);
     });
     
+    
+    /* Détecter le scroll de souris */
+    $('div').scroll(function() {
+        console.log('Utilisation de la roulette dans la balise <div>');
+    });
+    $(window).scroll(function() {
+        console.log('Utilisation de la roulette dans le document');
+    });
+    
+    
+    /* Détecter le bouton de la souris utilisé */
+    $('#imgToClick').mousedown(function(e){
+        $('#resultat').html('Événement : ' + e.type + '. Bouton pressé : ' +  e.which );
+    });
 });
