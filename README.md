@@ -8,3 +8,4 @@ Simplification du développement javascript avec jQuery
 - Modifier le contenu d'un élément
 - Modifier le DOM
 - Création de questionnaire
+- Gestion évènementielle
