@@ -68,4 +68,35 @@ $(function() {
         $('#caractereSaisi').text(c);
     });
     
+    
+    /*
+     * Méthodes évènementielles relatives aux éléments
+     */
+    // focus() - blur
+    $('.f').focus(function() {
+      $('#resultat3').text($(this).attr('id'));
+    });
+    $('.f').blur(function() {
+      $('#resultat4').text($(this).attr('id'));
+    });
+    
+    // focusin()- focusout()
+    $('fieldset').focusin(function() {
+      $('#resultat5').text($(this).attr('id'));
+    });
+    $('fieldset').focusout(function() {
+      $('#resultat6').text($(this).attr('id'));
+    });
+    
+    // resize() - window
+    $(window).resize(function() {
+        var taille = 'Taille de la fenêtre : ' + $(window).width() + 'px x ' + $(window).height() + 'px';
+        $('#resultat7').text(taille);
+        console.log(taille);
+    });
+    
+    // change()
+    $('select').change(function() {
+        $('#resultat8').text('La sélection : ' + $(this).val() + '.');
+    });
 });

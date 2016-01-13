@@ -91,6 +91,56 @@
                 <p>Caractère saisi : <span id="caractereSaisi"></span></p>
             </div>
             
+            <div class="row">
+                <h3>Les éléments - focus() / blur()</h3>
+                <form>
+                    <p>Cliquez sur les zones de texte</p>
+                    <p><input type="text" class="f" id="Zone-de-texte-1"><p>
+                    <p><input type="text" class="f" id="Zone-de-texte-2"></p>
+                </form>
+
+                <p>Focus : <span id="resultat3"></span></p>
+                <p>Perte de focus : <span id="resultat4"></span></p>
+            </div>
+            
+            <div class="row">
+                <h3>Les éléments - focusin() / focusout()</h3>
+                    <form>
+                        <p>Cliquez sur les zones de texte</p>
+                        <fieldset id="premier">
+                            <legend>Premier groupe</legend>
+                            <p><input type="text" class="f" id="Zone-de-texte-3"></p>
+                            <p><input type="text" class="f" id="Zone-de-texte-4"></p>
+                        </fieldset>
+
+                        <fieldset id="deuxieme">
+                            <legend>Deuxième groupe</legend>
+                            <input type="text" class="f" id="Zone-de-texte-5"><p>
+                            <input type="text" class="f" id="Zone-de-texte-6"><br />
+                        </fieldset>
+                    </form>
+                        Focus : <span id="resultat5"></span><br />
+                        Perte de focus : <span id="resultat6"></span>
+            </div>
+            
+            <div class="row">
+                <h3>Les éléments - resize() (window)</h3>
+                <p><span id="resultat7"></span></p>
+            </div>
+            
+            <div class="row">
+                <h3>Les éléments - change()</h3>
+                <form>
+                    <p>Sélectionnez une valeur dans la liste déroulante</p>
+                    <select>
+                        <option>J'aime jQuery</option>
+                        <option>J'adore jQuery</option>
+                        <option>Je raffole de jQuery</option>
+                        <option>jQuery ? Jamais entendu parler !</option>
+                    </select>
+                </form>
+                <p><span id="resultat8"></span></p>
+            </div>
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
         <script src="../js/code_js_cours_06_base_gestion_evenementielle.js"></script>
