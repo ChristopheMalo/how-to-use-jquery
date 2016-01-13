@@ -4,6 +4,7 @@
  * 
  */
 $(function() {
+    console.log('Le DOM est chargé'); // pour le test de chargement avec load
     /*
      * La souris
      */
@@ -99,4 +100,19 @@ $(function() {
     $('select').change(function() {
         $('#resultat8').text('La sélection : ' + $(this).val() + '.');
     });
+    
+    /*
+     * Les pages - Load
+     */
+    // test de chargement
+    $(window).load(function() {
+        console.log('La page est entièrement chargée');
+    });
+//    $('#imgToClick').load(function() {
+//        alert(this.width + ' x ' + this.height);
+//    });
+//    $(window).unload(function() {
+//        alert('alerte - Changement de page');
+//    });
+    
 });
