@@ -28,6 +28,12 @@
                 background-color: yellow;
                 border: 2px black solid;
             }
+            
+             #flashWhite {
+                width: 20px;
+                height: 20px; 
+                background-color: white;
+             }
         </style>
     </head>
     <body>
@@ -43,7 +49,7 @@
             
             
             <div class="row">
-                <h3 id="un">Déplacer une image</h3>
+                <h3 id="un">La souris - Déplacer une image</h3>
                 <p>
                   Cliquer sur l'image ci-dessous pour la déplacer aléatoirement
                 </p>
@@ -51,7 +57,7 @@
             </div>
             
             <div class="row">
-                <h3>Détecter le scroll de souris</h3>
+                <h3>La souris - Détecter le scroll de souris</h3>
                 <div id="detectScroll">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -61,12 +67,28 @@
             </div>
             
             <div class="row">
-                <h3>Déplacer une image</h3>
+                <h3>La souris - Déplacer une image</h3>
                 <p>
                   Cliquer sur l'image ci-dessous pour la déplacer aléatoirement
                 </p>
                 <img id="imgToClick" src="../images/cours_06/girafe.jpg" alt="girage" width="180" height="180">
                 <span id="resultat"></span>
+            </div>
+            
+            <div class="row">
+                <h3>Le clavier - keydown / keyup</h3>
+                <div id="flashWhite"></div>
+                <textarea id="resultat2"></textarea>
+            </div>
+            
+            <div class="row">
+                <h3>Le clavier - Déterminer le caractère</h3>
+                <form>
+                    <p>Saisir quelques mots</p>
+                    <textarea id="saisie"></textarea>
+                </form>
+                <p>Keycode saisi : <span id="keycodeSaisi"></span></p>
+                <p>Caractère saisi : <span id="caractereSaisi"></span></p>
             </div>
             
         </div>

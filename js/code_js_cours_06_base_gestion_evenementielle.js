@@ -47,4 +47,25 @@ $(function() {
     $('#imgToClick').mousedown(function(e){
         $('#resultat').html('Événement : ' + e.type + '. Bouton pressé : ' +  e.which );
     });
+    
+    
+    /*
+     * Le clavier
+     */
+    // keydown / keyup
+    $('#resultat2').keydown(function(){
+      $('#flashWhite').css('background-color', 'green');
+    });
+    $('#resultat2').keyup(function(){
+        $('#flashWhite').css('background-color', 'white');
+    });
+    
+    // Déterminer le caractère
+    $('#saisie').keypress(function(e) {
+        $('#keycodeSaisi').text(e.which);  //keyCode
+      
+        var c = String.fromCharCode(e.which); // le caractère
+        $('#caractereSaisi').text(c);
+    });
+    
 });
