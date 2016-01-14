@@ -65,6 +65,15 @@ $(function() {
     // $('img').off('click.depanPC.depanMAC');
     // ou appliquées aux balises a
     // $('a').off('.depanPC.depanMAC');
+    
+    
+    /*
+     * gestion évènementielle unique
+     */
+    // Prise ne compte du 1er clic, les autres seront ignorés
+    $('#imageOneClick').one('click', function() {
+      $('#message').text('Tu as cliqué sur l\'image. Désormais, Tu ne peux plus.').fadeIn(1000).fadeOut(5000);
+    });
 
     
 });
