@@ -98,7 +98,26 @@ $(function() {
             texte = "par vous";
         $('#message2').text('L\'image a été cliquée ' + texte).fadeIn(1000).fadeOut(1000);
     });
-    $('button').click(function() {
+    $('#clicTrigger').click(function() {
         $('#imageTrigger').trigger('click', 'par jQuery'); // Simule le click sur l'image et affiche le message ci-dessus - personnalisé
+    });
+    
+    
+    /*
+     * Créer des évènements personnalisés
+     */
+    $('#bonjour').on('bonjour_jquery', function() {
+        console.log('jQuery te dit bonjour !');
+    });
+    $('#bonjour').click(function() {
+        $('#bonjour').trigger('bonjour_jquery');
+    });
+    
+    // En passant des paramètres - ici un prénom
+    $('#bonjour2').on('bonjour_jquery', function(event, param) {
+        console.log(param + ', jQuery te dit bonjour !');
+    });
+    $('#bonjour2').click(function() {
+        $('#bonjour2').trigger('bonjour_jquery', 'Christophe');
     });
 });
