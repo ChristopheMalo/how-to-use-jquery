@@ -9,3 +9,4 @@ Simplification du développement javascript avec jQuery
 - Modifier le DOM
 - Création de questionnaire
 - Gestion évènementielle
+- Animation et effet
