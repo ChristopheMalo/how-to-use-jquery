@@ -76,4 +76,29 @@ $(function() {
     });
 
     
+    /*
+     * Déclenchement d'évènements
+     */
+    // évènements déclenchables avec trigger()
+    // blur, change, click, dblclick, error, focus, keydown, keypress, keyup, select et submit
+    // 
+    // Plusieurs paramètres passés à trigger() : $(selecteur).trigger('evenement', ['param1', 'param2', 'param3', 'etc.']);
+    // 
+    // Exemple simple
+//    $('#imageTrigger').click(function() {
+//        $('#message2').text('L\'image a été cliquée.').fadeIn(1000).fadeOut(1000);
+//    });
+//    $('button').click(function() {
+//        $('#imageTrigger').trigger('click'); // Simule le click sur l'image et affiche le message ci-dessus
+//    });
+    
+    // Exemple avec message personnalisé
+    $('#imageTrigger').click(function(event,texte) {
+        if (texte === undefined)
+            texte = "par vous";
+        $('#message2').text('L\'image a été cliquée ' + texte).fadeIn(1000).fadeOut(1000);
+    });
+    $('button').click(function() {
+        $('#imageTrigger').trigger('click', 'par jQuery'); // Simule le click sur l'image et affiche le message ci-dessus - personnalisé
+    });
 });
