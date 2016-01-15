@@ -82,6 +82,9 @@ $(function() {
     // évènements déclenchables avec trigger()
     // blur, change, click, dblclick, error, focus, keydown, keypress, keyup, select et submit
     // 
+    // évènements pas déclenchables :
+    // load, mousedown, mouseout, mouseover, mousemove, mouseup, resize et unload
+    // 
     // Plusieurs paramètres passés à trigger() : $(selecteur).trigger('evenement', ['param1', 'param2', 'param3', 'etc.']);
     // 
     // Exemple simple
@@ -119,5 +122,18 @@ $(function() {
     });
     $('#bonjour2').click(function() {
         $('#bonjour2').trigger('bonjour_jquery', 'Christophe');
+    });
+    
+    
+    /*
+     * Délégation d'évènements
+     */
+    $('#master').on('click', '.deleg', function(){
+        $(this).after('<div class="deleg">Ce &lt;div&gt; a les mêmes caractéristiques que son parent</div>');
+    });
+    
+    // Stopper la délégation
+    $('#suppr').on('click', function() {
+        $('#master').off('click','.deleg');
     });
 });

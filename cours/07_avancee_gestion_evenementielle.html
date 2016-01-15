@@ -23,6 +23,13 @@
             body {
                 margin-bottom: 50px;
             }
+            
+            div.deleg { 
+                background:yellow; 
+                font-weight:bold; 
+                cursor:pointer; 
+                padding:8px; 
+             }
         </style>
     </head>
     <body>
@@ -66,6 +73,13 @@
                 <button id="bonjour2">Clique ici</button>
             </div>
             
+            <div class="row">
+                <h3>Délégation d'évènements</h3>
+                <div id="master" class="deleg">
+                    <div class="deleg">Cliquez pour insérer un autre &ltdiv&gt</div>
+                </div>
+                <button id="suppr">Supprimer la délégation d'événements</button>
+            </div>
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
         <script src="../js/code_js_cours_07_avancee_gestion_evenementielle.js"></script>
