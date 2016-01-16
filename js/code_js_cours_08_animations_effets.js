@@ -61,4 +61,34 @@ $(function() {
         }); 
     });
     
+    
+    
+    /*
+     * Aller plus loin
+     */
+    // Déplier / Replier des éléments
+    // slideDown(), slideup() et slideToggle()
+    
+    // Définir une animation personnalisée avec animate()
+    // Syntaxe 1
+//    $('sel').animate({ prop1: val1, prop2: val2, prop3: val3, etc. }, durée, modèle, function() {
+//        //Une ou plusieurs instructions
+//    });
+    // Syntaxe 2
+//    $('sel').animate({ prop1: val1, prop2: val2, prop3: val3, etc. }, {options});
+
+    // delay
+    $('#afficheMessage').click(function() {
+        $('#message').fadeIn('slow').delay(2000).fadeOut('slow');
+    });
+    
+    // Désactive toutes les animations
+    $('.stopAnim').click(function() {
+        jQuery.fx.off = true;
+    });
+    // active toutes les animations
+    $('.execAnim').click(function() {
+        jQuery.fx.off = false;
+    });
+    
 });

@@ -20,12 +20,9 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <style>
-            body {
-                margin-bottom: 50px;
+            body            {margin-bottom: 50px;
             }
-            img {
-                width: 200px;
-            }
+            img             {width: 200px;}
             
             /* Diaporama */
             #diaporama      {position: relative; height: 133px;}
@@ -33,6 +30,9 @@
             #img01          {z-index: 1;}
             #img02          {z-index: 2;}
             #img03          {z-index: 3;}
+            
+            /* Delay */
+            #message        {display: none; background-color: #ddd; }
         </style>
     </head>
     <body>
@@ -102,9 +102,16 @@
             <div class="clearfix"></div>
             
             <div class="row">
-                <h3>Fondu enchainé - Last</h3>
+                <h3>Aller plus loin - Delay</h3>
+                <p id="message">Ce texte sera affiché pendant deux secondes</p>             
+                <button id="afficheMessage" class="btn btn-info btn-lg stopAnim">Afficher le message</button>
             </div>
             
+            <div class="row">
+                <h3>Aller plus loin - Activer / Désactiver les animations jQuery</h3>
+                <button class="btn btn-info btn-lg stopAnim">Stopper les anims</button>
+                <button class="btn btn-info btn-lg execAnim">Re-démarrer les anims</button>
+            </div>
        
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
