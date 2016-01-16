@@ -26,6 +26,13 @@
             img {
                 width: 200px;
             }
+            
+            /* Diaporama */
+            #diaporama      {position: relative; height: 133px;}
+            #diaporama img  {position: absolute;}
+            #img01          {z-index: 1;}
+            #img02          {z-index: 2;}
+            #img03          {z-index: 3;}
         </style>
     </head>
     <body>
@@ -63,6 +70,41 @@
                 <img src="../images/cours_08/winter.jpg" alt="winter">
                 </p>
             </div>
+            
+            <div class="row">
+                <h3>Fondu enchainé - Apparition / Disparition</h3>
+                <button id="affiche3" class="btn btn-info btn-lg">Faire apparaître les images</button>
+                <button id="cache3" class="btn btn-info btn-lg">Faire disparaître les images</button>
+                <p>
+                    <img src="../images/cours_08/dripe.jpg" alt="dripe" class="img2">
+                <img src="../images/cours_08/smoke.png" alt="smoke" class="img2">
+                <img src="../images/cours_08/winter.jpg" alt="winter" class="img2">
+                </p>
+            </div>
+            
+            <div class="row">
+                <h3>Fondu enchainé - Modification de l'opacité</h3>
+                <button id="fadeToDown" class="btn btn-info btn-lg">fadeToDown</button>
+                <button id="fadeToUp" class="btn btn-info btn-lg">fadeTo up</button>
+                <p><img src="../images/cours_08/dripe.jpg" alt="dripe" class="img3"></p>
+            </div>
+            
+            <div class="row">
+                <h3>Fondu enchainé - Ebauche de diaporama</h3>
+                <button id="startDiapo" class="btn btn-info btn-lg">Lancer le diaporama</button>
+                <p id="diaporama">
+                    <img src="../images/cours_08/dripe.jpg" alt="dripe" id="img03" class="img4">
+                    <img src="../images/cours_08/smoke.png" alt="smoke" id="img02" class="img4">
+                    <img src="../images/cours_08/winter.jpg" alt="winter" id="img01" class="img4">
+                </p>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="row">
+                <h3>Fondu enchainé - Last</h3>
+            </div>
+            
        
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
