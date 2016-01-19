@@ -39,5 +39,37 @@ $(function() {
     $('#etatFile').click(function() {
         var n = $('img').queue();
         $('#infos').text('Nombre d\'animations dans la file d\'attente : ' + n.length);
-    }); 
+    });
+    
+    
+    /*
+     * Manipule la file d'attente
+     */
+    $('#ajouter').click( function() {
+        $('#guitar01').toggle(5000)
+                 .queue(function() { 
+                    $('#guitar02').animate({left: '+=200'}, 'slow')
+                                 .animate({top: '+=200'}, 'slow')
+                                 .animate({left: '-=200'}, 'slow')
+                                 .animate({top: '-=200'}, 'slow');
+                    });
+    });  
+    $('#annuler').click( function() {
+        $('#manipuler-file-attente img').clearQueue();
+    });  
+    $('#remplacer').click( function() {
+        $('#guitar02').css('left', 200).css('top', 200);
+        $('#guitar02').queue(function() {
+                    $(this).animate({top: '-=200'}, 'slow')
+                           .animate({top: '+=200', 'left': '-=200'}, 'slow')
+                           .animate({top: '-=200'}, 'slow');
+                    $(this).dequeue();
+        });
+    });  
+    $('#retour').click( function() {
+        $('#manipuler-file-attente img').queue(function() {
+            alert('Animation terminée.');
+            $(this).dequeue();
+        });
+    });  
   });
