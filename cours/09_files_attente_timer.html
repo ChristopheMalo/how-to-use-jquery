@@ -20,11 +20,22 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <style>
+            body {
+                margin-bottom: 300px;
+            }
             #files-attente img {
                 border: 2px black solid;
             }
             #etat-file-attente img,
             #manipuler-file-attente img {
+                position: relative;
+            }
+            #balle {
+                width: 10px;
+                height: 10px;
+                background-color: red;
+                border: black 2px solid;
+                border-radius: 10px;
                 position: relative;
             }
         </style>
@@ -72,6 +83,11 @@
                     <img src="../images/cours_09/guitar01.jpg" id="guitar01" class="col-sm-6">
                     <img src="../images/cours_09/guitar02.jpg" id="guitar02" class="col-sm-6">
                 </div>
+            </div>
+            
+            <div id="repeter-anim">
+                <h3>Répéter une animation sans fin</h3>
+                <div id="balle"></div>
             </div>
             
        

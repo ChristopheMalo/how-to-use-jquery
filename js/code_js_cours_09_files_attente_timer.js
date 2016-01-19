@@ -43,7 +43,7 @@ $(function() {
     
     
     /*
-     * Manipule la file d'attente
+     * Manipuler la file d'attente
      */
     $('#ajouter').click( function() {
         $('#guitar01').toggle(5000)
@@ -71,5 +71,17 @@ $(function() {
             alert('Animation terminée.');
             $(this).dequeue();
         });
-    });  
+    }); 
+    
+    
+    /*
+     * Répéter une animation sans fin
+     */
+    function bis() {
+      $('#balle').animate({left: '+=200'}, 'slow')
+                 .animate({top: '+=200'}, 'slow')
+                 .animate({left: '-=200'}, 'slow')
+                 .animate({top: '-=200'}, 'slow', bis);
+    };
+    bis();
   });
