@@ -10,3 +10,4 @@ Simplification du développement javascript avec jQuery
 - Création de questionnaire
 - Gestion évènementielle
 - Animations et effets
+- Files d'attente et timer
