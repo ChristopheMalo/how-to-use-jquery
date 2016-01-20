@@ -104,4 +104,24 @@ $(function() {
         $('#stop-start-anim img').animate({left: '+=500'}, 2000).animate({top: '+=300'}, 2000);
     });
     
+    
+    /*
+     * Mettre en place un timer
+     */
+    // Une horloge élémentaire
+    function Horloge() {
+        var myDate = new Date();
+        var h = myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+        $('#horlogeElementaire').text(h);
+    }
+    setInterval(Horloge, 1000);
+    
+    // Une animation sans fin avec set interval
+    function bis02() {
+      $('#balle02').animate({left: '+=200'}, 'slow')
+                   .animate({top: '+=200'}, 'slow')
+                   .animate({left: '-=200'}, 'slow')
+                   .animate({top: '-=200'}, 'slow');
+    };
+    setInterval(bis02, 2400);
   });

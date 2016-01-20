@@ -31,7 +31,8 @@
             #stop-start-anim img {
                 position: relative;
             }
-            #balle {
+            #balle,
+            #balle02 {
                 width: 10px;
                 height: 10px;
                 background-color: red;
@@ -41,6 +42,9 @@
             }
             #stop-start-anim {
                 margin-top: 240px;
+            }
+            #horloge {
+                margin-top: 300px;
             }
         </style>
     </head>
@@ -77,7 +81,7 @@
                 <img src="../images/cours_09/sport_frog.jpg" alt="sport-frog">
             </div>
             
-            <div id="manipuler-file-attente">
+            <div id="manipuler-file-attente" class="row">
                 <h3>Manipuler la file d'attente</h3>
                 <button id="ajouter" class="btn btn-info btn-lg">Ajouter animation</button>
                 <button id="annuler" class="btn btn-info btn-lg">Annuler la file d'attente</button><br />
@@ -89,12 +93,12 @@
                 </div>
             </div>
             
-            <div id="repeter-anim">
+            <div id="repeter-anim" class="row">
                 <h3>Répéter une animation sans fin</h3>
                 <div id="balle"></div>
             </div>
             
-            <div id="stop-start-anim">
+            <div id="stop-start-anim" class="row">
                 <h3>Arrêter et reprendre une animation</h3>
                 <button id="stopFin" class="btn btn-info btn-lg">Stop et fin</button>
                 <button id="stopAnnuleFin" class="btn btn-info btn-lg">Stop, annule et fin</button>
@@ -103,6 +107,15 @@
                 <img src="../images/cours_09/guitar01.jpg" id="guitar03">
             </div>
             
+            <div id="horloge" class="row">
+                <h3>Mettre en place un timer - Une horloge élémentaire</h3>
+                <span id="horlogeElementaire"></span>
+            </div>
+            
+            <div id="repeter-anim-interval" class="row">
+                <h3>Répéter une animation sans fin avec setInterval</h3>
+                <div id="balle02"></div>
+            </div>
        
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
