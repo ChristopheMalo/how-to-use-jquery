@@ -84,4 +84,24 @@ $(function() {
                  .animate({top: '-=200'}, 'slow', bis);
     };
     bis();
+    
+    
+    /*
+     * Arrêter et reprendre une animation
+     */
+    $('#stop-start-anim img').animate({left: '+=500'}, 2000).animate({top: '+=300'}, 2000);
+    $('#stopFin').click( function() {
+        $('#stop-start-anim img').stop(false, true);
+    });  
+    $('#stopAnnuleFin').click( function() {
+        $('#stop-start-anim img').stop(true, true);
+    });  
+    $('#stop').click( function() {
+        $('#stop-start-anim img').stop(true, false);
+    });  
+    $('#reprise').click( function() {
+        $('#stop-start-anim img').css('left', 0).css('top', 0);
+        $('#stop-start-anim img').animate({left: '+=500'}, 2000).animate({top: '+=300'}, 2000);
+    });
+    
   });
