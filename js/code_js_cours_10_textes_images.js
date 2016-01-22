@@ -6,7 +6,7 @@
 /*
  * Las chaines de caractères
  */
-// Supprimer des caractères
+// Supprimer des espaces dans une chaine
 $(function() {
     $('#action').click(function() {
       var texte = $('#texte').val();
