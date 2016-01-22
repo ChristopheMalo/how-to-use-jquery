@@ -20,5 +20,10 @@ $(function() {
         var charPosition = $('#position').val();
         var resultat = 'Le caractère en position ' + charPosition + ' est un "' + texte.charAt(charPosition) + '"';
         $('#resultat2').text(resultat);
-    });  
+    });
+    
+    // Recherche et remplacement de texte
+    $('#changeCodeImg').click(function() {
+        $('#img01').replaceWith('<img id="img02" src="../images/cours_10/img02.jpg" alt="img02">');
+    });
 });
