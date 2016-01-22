@@ -34,17 +34,32 @@
                 <h2>Textes et images</h2>
                 <p>Aborder des méthodes spécialisées dans le traitement des textes et images</p>
             </div>
-            <a class="btn btn-primary" href="../index.html#jquery_part2" role="button" >Retour à l'index</a>
+            <a class="btn btn-primary" href="../index.html#jquery_part2" role="button">Retour à l'index</a>
             
             
             <div class="row">
                 <h3>Les chaînes de caractères - Supprimer des espaces</h3>
                 <p>Tapez du texte dans la zone de texte en le faisant commencer et/ou finir par des espaces, puis cliquez sur le bouton.</p>
                 <div class="form-group">
-                    <input type="text" id="texte" class="form-control" />
+                    <input type="text" id="texte" class="form-control">
                 </div>
-                <button id="action"  class="btn btn-info btn-lg">Cliquez ici</button>
+                <button id="action" class="btn btn-info btn-lg">Cliquez ici</button>
                 <pre id="resultat"></pre>
+            </div>
+            
+            <div class="row">
+                <h3>Les chaines de caractères - Position d'un caractère</h3>
+                <p>Tapez du texte dans la première zone de texte, une position dans la deuxième zone de texte, puis cliquez sur le bouton.</p>
+                <div class="form-group">
+                    <label for="texte2">Texte :</label>
+                    <input class="form-control" type="text" id="texte2" placeholder="Votre texte">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position :</label>
+                    <input class="form-control" type="text" id="position" placeholder="Position du caractère">
+                </div>
+                <button id="action2" class="btn btn-info btn-lg">Cliquez ici</button><br>
+                <pre id="resultat2"></pre>
             </div>
        
         </div>
