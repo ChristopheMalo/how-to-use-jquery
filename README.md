@@ -11,3 +11,5 @@ Simplification du développement javascript avec jQuery
 - Gestion évènementielle
 - Animations et effets
 - Files d'attente et timer
+- Textes et images
+- Formulaires et tableaux
