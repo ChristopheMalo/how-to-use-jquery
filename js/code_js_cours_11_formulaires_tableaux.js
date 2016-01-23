@@ -27,6 +27,15 @@ $(function() {
     $('#determiner-focus input, #determiner-focus textarea').blur( function() { 
         focusIs = '#' + $(this).attr('id');        
         $(focusIs).css('background-color', '#fff');
-    }); 
-
+    });
+    
+    // Vider un formulaire
+    $('#reset-form').click(ResetFormulaire);
+    function ResetFormulaire() {
+        $('#determiner-focus input, #determiner-focus textarea')
+                .not(':button, :submit, :reset, :hidden')
+                .val('')
+                .prop('checked', false)
+                .prop('selected', false);
+    }
 });
