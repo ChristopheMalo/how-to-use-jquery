@@ -37,5 +37,15 @@ $(function() {
     $('#img03').mouseout(function() {
         $(this).attr('src','../images/cours_10/img03_vignette.jpg');
     });
+    
+    // agrandissement et animation au survol
+    $('#img03-vignette').mouseover(function() {
+        $(this).fadeOut(1000);
+        $('#img03-full').fadeIn(1000);
+    });
+    $('#img03-full').mouseout(function() {
+        $(this).fadeOut(1000);
+        $('#img03-vignette').fadeIn(1000);
+    });
 
 });

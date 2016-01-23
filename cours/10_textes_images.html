@@ -20,11 +20,28 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <style>
+            body {
+                margin-bottom: 600px;
+            }
             #resultat {
                 margin-top: 10px;
             }
-            #img03 {
+            #img03,
+            #img03-vignette,
+            #img03-full {
                 cursor: pointer;
+            }
+            #anim-survol {
+                position: relative;
+            }
+            #anim-survol #img03-vignette,
+            #anim-survol #img03-full {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            #img03-full {
+                display: none;
             }
         </style>
     </head>
@@ -74,6 +91,14 @@
             <div class="row">
                 <h3>Les images - Réaction au survol</h3>
                 <p><img id="img03" src="../images/cours_10/img03_vignette.jpg" alt="img03"></p>
+            </div>
+            
+            <div class="row">
+                <h3>Les images - Agrandissement et animation au survol</h3>
+                <p id="anim-survol" >
+                    <img id="img03-vignette" src="../images/cours_10/img03_vignette.jpg" alt="img03-vignette">
+                    <img id="img03-full" src="../images/cours_10/img03.jpg" alt="img03-full">
+                </p>
             </div>
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
