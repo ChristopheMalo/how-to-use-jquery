@@ -37,5 +37,35 @@ $(function() {
     $('#img03').mouseout(function() {
         $(this).attr('src','../images/cours_10/img03_vignette.jpg');
     });
-
+    
+    // agrandissement et animation au survol
+    $('#img03-vignette').mouseover(function() {
+        $(this).fadeOut(1000);
+        $('#img03-full').fadeIn(1000);
+    });
+    $('#img03-full').mouseout(function() {
+        $(this).fadeOut(1000);
+        $('#img03-vignette').fadeIn(1000);
+    });
+    
+    // Galerie d'images
+    $('.vignette').css('border','5px white solid');
+    $('#galerie01 img:first').css('border','5px black solid');
+    $('.vignette').click(function() {
+        $('.vignette').css('border','5px white solid');
+        $(this).css('border','5px black solid');
+        
+        // Sans fondu
+//        var nom = $(this).attr('id');
+//        $('#grand').attr('src',nom);
+        
+        
+        // avec fondu
+        var nom = $(this).attr('id');
+        
+        $('#full').fadeOut(400, function() {
+            $('#full').attr('src', ('../images/cours_10/' + nom)).fadeIn(400); 
+        });
+        
+    });  
 });

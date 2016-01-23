@@ -20,11 +20,31 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <style>
+            body {
+                margin-bottom: 600px;
+            }
             #resultat {
                 margin-top: 10px;
             }
-            #img03 {
+            #img03,
+            #img03-vignette,
+            #img03-full,
+            #galerie01 img.vignette {
                 cursor: pointer;
+            }
+            #anim-survol {
+                border: solid 2px #6a6073;
+                height: 450px;
+                position: relative;
+            }
+            #anim-survol #img03-vignette,
+            #anim-survol #img03-full {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            #img03-full {
+                display: none;
             }
         </style>
     </head>
@@ -74,6 +94,25 @@
             <div class="row">
                 <h3>Les images - Réaction au survol</h3>
                 <p><img id="img03" src="../images/cours_10/img03_vignette.jpg" alt="img03"></p>
+            </div>
+            
+            <div class="row">
+                <h3>Les images - Agrandissement et animation au survol</h3>
+                <p id="anim-survol" >
+                    <img id="img03-vignette" src="../images/cours_10/img03_vignette.jpg" alt="img03-vignette">
+                    <img id="img03-full" src="../images/cours_10/img03.jpg" alt="img03-full">
+                </p>
+            </div>
+            
+            <div id="galerie01" class="row">
+                <h3>Les images - Galerie d'images</h3>
+                <p class="col-sm-2"><img src="../images/cours_10/voiture01_vignette.jpg" id="voiture01.jpg" class="vignette img-responsive" alt="voiture01 vignette"></p>
+                <p class="col-sm-2"><img src="../images/cours_10/voiture02_vignette.jpg" id="voiture02.jpg" class="vignette img-responsive" alt="voiture02 vignette"></p>
+                <p class="col-sm-2"><img src="../images/cours_10/voiture03_vignette.jpg" id="voiture03.jpg" class="vignette img-responsive" alt="voiture03 vignette"></p>
+                <p class="col-sm-2"><img src="../images/cours_10/voiture04_vignette.jpg" id="voiture04.jpg" class="vignette img-responsive" alt="voiture04 vignette"></p>
+                <p class="col-sm-2"><img src="../images/cours_10/voiture05_vignette.jpg" id="voiture05.jpg" class="vignette img-responsive" alt="voiture05 vignette"></p>
+                <p class="col-sm-12"><img id="full" src="../images/cours_10/voiture01.jpg" alt="voiture01"></p>
+
             </div>
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
