@@ -46,6 +46,7 @@ $(function() {
     // console.log($('a')); // Debug
     // Button tester les réponses
     $('a:eq(0)').attr({
+        id     : 'test-answers',
         class  : 'btn btn-primary',
         href   : '#',
         role   : 'button',
@@ -106,7 +107,7 @@ $(function() {
     /*
      * Gérer les réponses
      */
-    $('a').hover(
+    $('#test-answers').hover(
         function() { 
             $('.reponse').show();
             if ($(':radio[id="r1"]:checked').val()) {
