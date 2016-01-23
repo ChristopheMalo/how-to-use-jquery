@@ -124,4 +124,7 @@ $(function() {
                    .animate({top: '-=200'}, 'slow');
     };
     setInterval(bis02, 2400);
+    
+    // Test simple avec animate
+    $('#form-geo').animate({'width': '300'}).animate({'height': '300'}).animate({'border-width': '20'});
   });
