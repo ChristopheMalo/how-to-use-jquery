@@ -4,7 +4,7 @@
  * 
  */
 /*
- * Las chaines de caractères
+ * Les chaines de caractères
  */
 $(function() {
     // Supprimer des espaces dans une chaine
@@ -26,4 +26,16 @@ $(function() {
     $('#changeCodeImg').click(function() {
         $('#img01').replaceWith('<img id="img02" src="../images/cours_10/img02.jpg" alt="img02">');
     });
+    
+    /*
+     * Les images
+     */
+    // Réaction au survol
+    $('#img03').mouseover(function() {
+        $(this).attr('src','../images/cours_10/img03.jpg');
+    });
+    $('#img03').mouseout(function() {
+        $(this).attr('src','../images/cours_10/img03_vignette.jpg');
+    });
+
 });
