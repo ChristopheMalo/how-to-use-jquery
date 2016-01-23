@@ -86,7 +86,7 @@ $(function() {
       $('#resultat1e').text('Index et prénoms en minuscules : ' + tableau4.join(', '));
     });
     
-    // La fonction $inArray() - Rechercher l'index d'un élément dans un tableau
+    // La fonction $.inArray() - Rechercher l'index d'un élément dans un tableau
     var tableau5 = ['element1', 'element2', 'element3', 'element4', 'element5'];
     //$.inArray('element5',tableau5, 4);
     $('#search-array-1').click(function() {
@@ -103,5 +103,16 @@ $(function() {
          // Sans indiquer la position et en indiquant un mauvais élément
        var resultat = $.inArray('element6', tableau5);
        $('#resultat1f').text('Position element6 : ' + resultat); // retourne -1
+    });
+    
+    // La fonction $.merge() - Regrouper 2 tableaux dans un seul
+    var tableau6 = ['Luca', 'Emma', 'Mathis', 'Jade', 'Léa', 'Enzo', 'Chloé'];
+    var tableau7 = ['Clara', 'Ethan', 'Camille', 'Hugo', 'Lylou', 'Théo'];
+    $('#afficheT6').text('Données originales tableau 6 : ' + tableau6.join(', '));
+    $('#afficheT7').text('Données originales tableau 7 : ' + tableau7.join(', '));
+    $('#group-array').click(function() {
+       $.merge(tableau6, tableau7);
+       var resultat = tableau6.join(', ');
+       $('#resultat1g').text('Résultat groupé : ' + resultat);
     });
 });
