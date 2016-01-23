@@ -67,5 +67,5 @@ $(function() {
             $('#full').attr('src', ('../images/cours_10/' + nom)).fadeIn(400); 
         });
         
-    });  
+    });
 });
