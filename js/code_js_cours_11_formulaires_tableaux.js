@@ -85,4 +85,23 @@ $(function() {
       });
       $('#resultat1e').text('Index et prénoms en minuscules : ' + tableau4.join(', '));
     });
+    
+    // La fonction $inArray() - Rechercher l'index d'un élément dans un tableau
+    var tableau5 = ['element1', 'element2', 'element3', 'element4', 'element5'];
+    //$.inArray('element5',tableau5, 4);
+    $('#search-array-1').click(function() {
+        // Sans indiquer la position
+       var resultat = $.inArray('element1', tableau5);
+       $('#resultat1f').text('Position element1 : ' + resultat); // retourne 0
+    });
+    $('#search-array-4').click(function() {
+        // en indiquant une mauvaise position, la bonne position est tout de même retournée
+       var resultat = $.inArray('element4', tableau5, 1);
+       $('#resultat1f').text('Position element4 : ' + resultat); // retourne 3
+    });
+    $('#search-array-6').click(function() {
+         // Sans indiquer la position et en indiquant un mauvais élément
+       var resultat = $.inArray('element6', tableau5);
+       $('#resultat1f').text('Position element6 : ' + resultat); // retourne -1
+    });
 });
