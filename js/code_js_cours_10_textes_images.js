@@ -22,7 +22,8 @@ $(function() {
         $('#resultat2').text(resultat);
     });
     
-    // Recherche et remplacement de texte
+    // :contains
+    // Recherche et remplacement de texte ou élément
     $('#changeCodeImg').click(function() {
         $('#img01').replaceWith('<img id="img02" src="../images/cours_10/img02.jpg" alt="img02">');
     });
@@ -68,4 +69,28 @@ $(function() {
         });
         
     });
+    
+    // Diaporama
+    var i = 0;
+    affiche();
+
+    function affiche() {
+        i++;
+        if (i === 1) {
+            precedent = '#music5';
+        } else {
+            precedent = '#music' + (i - 1);
+        }
+        
+        var actuel = '#music' + i;
+        $(precedent).fadeOut(2000);
+        $(actuel).fadeIn(2000);
+        
+        if (i === 5) {
+            i = 0;
+        }          
+    }
+
+    setInterval(affiche, 2000);
+
 });

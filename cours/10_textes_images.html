@@ -21,7 +21,7 @@
         <![endif]-->
         <style>
             body {
-                margin-bottom: 600px;
+                margin-bottom: 200px;
             }
             #resultat {
                 margin-top: 10px;
@@ -34,21 +34,30 @@
             }
             #anim-survol {
                 border: solid 2px #6a6073;
+                position: relative;
                 height: 450px;
             }
             #img03-full {
                 cursor: pointer;
             }
-            #anim-survol {
-                position: relative;
-            }
             #anim-survol #img03-vignette,
             #anim-survol #img03-full {
                 position: absolute;
-                left: 0px;
-                top: 0px;
+                    left: 0px;
+                    top: 0px;
             }
             #img03-full {
+                display: none;
+            }
+            #diaporama {
+                border: solid 2px #6a6073;
+                position: relative;
+                height: 480px;
+            }
+            #diaporama img { 
+                position: absolute;
+                    left: 0px;
+                    top: 0px;
                 display: none;
             }
         </style>
@@ -91,7 +100,7 @@
             </div>
             
             <div class="row">
-                <h3>Rechercher et remplacer du texte, du code...</h3>
+                <h3>Rechercher et remplacer du texte ou un élément...</h3>
                 <p><img id="img01" src="../images/cours_10/img01.jpg" alt="img01"></p>
                 <button id="changeCodeImg" class="btn btn-info btn-lg">Remplacer l'image (Son code)</button>
             </div>
@@ -117,7 +126,17 @@
                 <p class="col-sm-2"><img src="../images/cours_10/voiture04_vignette.jpg" id="voiture04.jpg" class="vignette img-responsive" alt="voiture04 vignette"></p>
                 <p class="col-sm-2"><img src="../images/cours_10/voiture05_vignette.jpg" id="voiture05.jpg" class="vignette img-responsive" alt="voiture05 vignette"></p>
                 <p class="col-sm-12"><img id="full" src="../images/cours_10/voiture01.jpg" alt="voiture01"></p>
-
+            </div>
+            
+            <div class="row">
+                <h3>Les images - Diaporama</h3>
+                <div  id="diaporama" >    
+                    <p><img src="../images/cours_10/music5.jpg" id="music5" alt="music5"></p>
+                    <p><img src="../images/cours_10/music4.jpg" id="music4" alt="music4"></p>
+                    <p><img src="../images/cours_10/music3.jpg" id="music3" alt="music3"></p>
+                    <p><img src="../images/cours_10/music2.jpg" id="music2" alt="music2"></p>
+                    <p><img src="../images/cours_10/music1.jpg" id="music1" alt="music1"></p>
+                </div>
             </div>
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
