@@ -68,5 +68,21 @@ $(function() {
       }, true);
     $('#resultat1c').text('Avant le cinquième : ' + tableau2.join(', '));
     });
-
+    
+    // La fonction $.map() - Recopier une partie ou la totalité d'un tableau
+    var tableau3 = ['Luca', 'Emma', 'Mathis', 'Jade', 'Léa', 'Enzo', 'Chloé'];
+    var tableau4;
+    $('#resultat1d').text('Données originales : ' + tableau3.join(', '));
+    $('#firstCopy').click(function() {
+      tableau4 = $.map(tableau3, function(element,index) {
+            return (element.toUpperCase());
+      });
+      $('#resultat1e').text('Prénoms en majuscules : ' + tableau4.join(', '));
+    });
+    $('#secondCopy').click(function() {
+      tableau4 = $.map(tableau3, function(element,index) {
+            return (index + ' : ' + element.toLowerCase());
+      });
+      $('#resultat1e').text('Index et prénoms en minuscules : ' + tableau4.join(', '));
+    });
 });
