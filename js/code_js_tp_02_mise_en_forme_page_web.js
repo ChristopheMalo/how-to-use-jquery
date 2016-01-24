@@ -29,4 +29,11 @@ $(function() {
            $('#contenu p').css('text-decoration', 'none');
        }
    });
+   
+   // Choix de la font
+    $('#font').change(function() {
+       var font = '"' + $('#font option:selected').val() + '"';
+       console.log(font);
+       $('#contenu p').css('font-family', font);
+    });
 });
