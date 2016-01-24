@@ -31,15 +31,106 @@
                     <p>En jQuery, modifier une page web grâce aux options du formulaire - complément : intégrer boostrap</p>
                 </div>
                 
-                
-                    <div class="col-sm-8" id="col-left">Colonne gauche</div>
-                    <div class="col-sm-4" id="col-right">Colonne droite</div>
-                
-                
-                
                 <div class="col-sm-12">
                     <a class="btn btn-primary" href="../index.html#jquery_part2" role="button">Retour à l'index</a>
                 </div>
+                
+                <div class="col-xs-12 row-same-height">
+                    <!-- Contenu de la page à modifier -->
+                    <div class="col-xs-7" id="contenu">
+                        <h2>Contenu</h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                        <p id="image"><img src="../images/tp_02/acoustic-guitar.jpg" alt="Acoustic Guitar" class="img-responsive"></p>
+                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. </p>
+                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. </p>
+                    </div>
+                    
+                    <!-- Controles de modification de la page -->
+                    <div class="col-xs-5" id="controles">
+                        <h2>Controles</h2>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="couleur-fond" class="col-sm-6 control-label">Couleur de fond</label>
+                                <div class="col-sm-6">
+                                    <select id="couleur-fond" class="form-control">
+                                      <option value="#FFFFFF">Blanc</option>
+                                      <option value="#9FFEF1">Bleu</option>
+                                      <option value="#9FFECE">Vert</option>
+                                      <option value="#FAFE9F">Jaune</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="texte" class="col-sm-6 control-label">Texte</label>
+                                <div class="col-sm-6">
+                                    <select id="texte" class="form-control">
+                                      <option value="Normal">Normal</option>
+                                      <option value="Gras">Gras</option>
+                                      <option value="Italique">Italique</option>
+                                      <option value="Souligne">Souligné</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="police" class="col-sm-6 control-label">Police</label>
+                                <div class="col-sm-6">
+                                    <select id="police" class="form-control">
+                                      <option value="Times New Roman">Times New Roman</option>
+                                      <option value="Courier New">Courier New</option>
+                                      <option value="Arial">Arial</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="police-prem-phrase" class="col-sm-6 control-label">Police 1e phrase</label>
+                                <div class="col-sm-6">
+                                    <select id="police-prem-phrase" class="form-control">
+                                      <option value="Times New Roman">Times New Roman</option>
+                                      <option value="Courier New">Courier New</option>
+                                      <option value="Arial">Arial</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="prem-car-phrases" class="col-sm-6 control-label">Prem caract phrases</label>
+                                <div class="col-sm-6">
+                                    <select id="prem-car-phrases" class="form-control">
+                                      <option value="Normal">Normal</option>
+                                      <option value="Gras">Gras</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mot" class="col-sm-6 control-label">Mot en rouge</label>
+                                <div class="col-sm-6">
+                                    <input type="text" id="mot" class="form-control">
+                                    <button id="couleurMot" class="btn btn-lg btn-info">OK</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bordure-images" class="col-sm-6 control-label">Bordure images</label>
+                                <div class="col-sm-6">
+                                    <select id="bordure-images" class="form-control">
+                                      <option value="Rien">Rien</option>
+                                      <option value="Simple">Simple</option>
+                                      <option value="Double">Double</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button id="raz" class="btn btn-lg btn-info">RAZ formulaire</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>

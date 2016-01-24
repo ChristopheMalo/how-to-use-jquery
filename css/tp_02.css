@@ -33,15 +33,33 @@ body {
 
 /**
  * -------------------------
+ * Column
+ * -------------------------
+ */
+/* Force la même hauteur pour toutes les colonnes d'une rangée - Ne fonctionne pas sous IE9 */
+.row-same-height {
+  display:  -webkit-box;
+  display: -webkit-flex;
+  display:  -ms-flexbox;
+  display:         flex;
+}
+
+/**
+ * -------------------------
  * Structure
  * -------------------------
  */
 .container-fluid {
     background-color: #9191a8;
 }
-#col-left {
+#contenu {
     background-color: #c0c0ec;
 }
-#col-right {
-    background-color: #7070b4;
+#controles {
+    background-color: #eee;
+}
+#image img {
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 40%;
 }
