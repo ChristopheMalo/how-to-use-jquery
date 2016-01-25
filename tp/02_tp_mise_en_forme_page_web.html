@@ -48,7 +48,7 @@
                     <!-- Controles de modification de la page -->
                     <div class="col-xs-5" id="controles">
                         <h2>Controles</h2>
-                        <form class="form-horizontal">
+                        <div class="form-horizontal">
                             <div class="form-group">
                                 <label for="couleur-fond" class="col-sm-6 control-label">Couleur de fond</label>
                                 <div class="col-sm-6">
@@ -89,9 +89,9 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="police-prem-phrase" class="col-sm-6 control-label">Police 1e phrase</label>
+                                <label for="font-p-first" class="col-sm-6 control-label">Font first P</label>
                                 <div class="col-sm-6">
-                                    <select id="police-prem-phrase" class="form-control">
+                                    <select id="font-p-first" class="form-control">
                                         <option value="Open Sans">Open Sans</option>
                                         <option value="Helvetica">Helvetica</option>
                                         <option value="Arial">Arial</option>
@@ -103,23 +103,25 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="prem-car-phrases" class="col-sm-6 control-label">Prem caract phrases</label>
+                                <label for="first-char-p" class="col-sm-6 control-label">First Char P</label>
                                 <div class="col-sm-6">
-                                    <select id="prem-car-phrases" class="form-control">
+                                    <select id="first-char-p" class="form-control">
                                         <option value="Normal">Normal</option>
                                         <option value="Gras">Gras</option>
                                     </select>
                                 </div>
                             </div>
 
+                            
                             <div class="form-group">
-                                <label for="mot" class="col-sm-6 control-label">Mot en rouge</label>
+                                <label for="mot" class="col-sm-6 control-label">Position Mot en rouge</label>
                                 <div class="col-sm-6">
                                     <input type="text" id="mot" class="form-control">
                                     <button id="couleurMot" class="btn btn-lg btn-info">OK</button>
                                 </div>
                             </div>
-
+                            
+                            
                             <div class="form-group">
                                 <label for="bordure-images" class="col-sm-6 control-label">Bordure images</label>
                                 <div class="col-sm-6">
@@ -134,7 +136,7 @@
                             <div>
                                 <button id="raz" class="btn btn-lg btn-info">RAZ formulaire</button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 
