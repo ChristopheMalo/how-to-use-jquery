@@ -31,18 +31,6 @@ body {
     font-size: 16px; /* Font base - overwrite boostrap font-size of 14 px */
 }
 
-/**
- * -------------------------
- * Column
- * -------------------------
- */
-/* Force la même hauteur pour toutes les colonnes d'une rangée - Ne fonctionne pas sous IE9 */
-.row-same-height {
-  display:  -webkit-box;
-  display: -webkit-flex;
-  display:  -ms-flexbox;
-  display:         flex;
-}
 
 /**
  * -------------------------
@@ -57,7 +45,7 @@ body {
     position: relative;
 }
 .fond{
-/*    margin-bottom: -5px;*/
+    margin-bottom: -5px;
     z-index: 10;
     position: relative;
 }
