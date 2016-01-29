@@ -4,6 +4,8 @@
  * 
  */
 $(function() {
+    var stopDetection = 0; // Détection des collisions
+
     // Déplacement de la soucoupe sur l'aire de jeu...
     $(document).keydown(function(e){
         // ...vers la droite
@@ -78,9 +80,11 @@ $(function() {
     
     // Fonction pour afficher vache et voiture alétoirement
     function afficheCibles() {
+        
+        stopDetection = 0;
 
-        var cibleX = Math.floor(Math.random() * 500)+ 20;   // Abscisse
-        var cibleY = Math.floor(Math.random() * 300)+ 20;   // Ordonnée
+        var cibleX = Math.floor(Math.random() * 500) + 20;   // Abscisse
+        var cibleY = Math.floor(Math.random() * 300) + 20;   // Ordonnée
         var cibleType = Math.floor(Math.random() * 2);      // Type -> Vache ou voiture
 
         if (cibleType === 0) {
@@ -99,6 +103,51 @@ $(function() {
     }
     
     
-    setInterval(afficheCibles, 2000); // Affiche voitures et vaches aléatoirement
- 
+    // Gestion des collisions entre la soucoupe et les cibles
+    function collisions() {
+        
+        posX = parseInt($('#soucoupe').css('left'));
+        posY = parseInt($('#soucoupe').css('top'));
+        
+        if ($('#bon').css('display') === 'none') {
+            
+            cibleType = 'mauvais';
+            cibleX = parseInt($('#mauvais').css('left'));
+            cibleY = parseInt($('#mauvais').css('top'));
+        
+        } else  {
+            
+            cibleType = 'bon';
+            cibleX = parseInt($('#bon').css('left'));
+            cibleY = parseInt($('#bon').css('top'));
+        
+        }
+        
+        if ((cibleX > posX - 20) && (cibleX < (posX + 125 - 50 + 20)) && (cibleY > posY - 20) && (cibleY < (posY + 177 - 116 + 20)) && (stopDetection === 0)) {
+            
+            stopDetection = 1;
+            
+            if (cibleType === 'bon') {
+            
+                var nbBon = parseInt($('#info1').text()) + 1;
+                $('#info1').text(nbBon);
+                var score = parseInt($('#info3').text()) + 5;
+                $('#info3').text(score);
+                $('#bon').css('display', 'none');
+            
+            } else {
+                
+                var nbMauvais = parseInt($('#info2').text()) + 1;
+                $('#info2').text(nbMauvais);
+                var score = parseInt($('#info3').text()) - 5;
+                $('#info3').text(score);
+                $('#mauvais').css('display', 'none');
+           
+            }
+        }
+    }
+    
+    setInterval(afficheCibles, 2000);   // Affiche voitures et vaches aléatoirement
+    setInterval(collisions, 200);       // Gérer les collisions
+
 });
