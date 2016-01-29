@@ -28,6 +28,8 @@
             <div class='row'>
                 <div class="col-sm-12">
                     <h1>TP 04 - Un jeu de collecte spatiale</h1>
+                    <p>copyright music : <a href="http://freemusicarchive.org/music/Big_Bill_Broonzy/~/BigBillBroonzy-BabyPleaseDontGo1">freemusicarchive.org</a></p>
+                    <p>Collecter les vaches</p>
                 </div>
                 
                 <div class="col-sm-12">
@@ -35,8 +37,17 @@
                 </div>
             </div>
             
-            <div class="row">
-                
+            <div id="game-container" class="row">
+                <div id="jeu">
+                    <img id="soucoupe" src="../images/tp_04/soucoupe.png" alt="soucoupe">
+                    <img id="bon" src="../images/tp_04/bon.png" alt="bon">
+                    <img id="mauvais" src="../images/tp_04/mauvais.png" alt="mauvais">
+                </div>
+                <p>Bon : <span id="info1">0</span> Mauvais : <span id="info2">0</span> Score : <span id="info3">0</span></p> 
+                <audio preload="auto" id="musiqueFond" autoplay="autoplay" loop="loop">
+                    <source src="BabyPleaseDontGo.mp3" type="audio/mp3">
+                    <source src="BabyPleaseDontGo.ogg" type="audio/ogg">
+                </audio>
             </div>
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>

@@ -1,0 +1,65 @@
+/**
+ * TP 04 jQuery - Un jeu de collecte spatiale
+ * Cours jQuery OpenClassrooms
+ * Adaptation Christophe Malo
+ *
+ * @project     jQuery
+ * @namefile    tp_04.css
+ * @fileversion 1.0.0
+ * @cssversion  css3
+ * @author      Christophe Malo
+ * @copyright   2016 by the author & openclassrooms
+ * @license     no license - free to use - just link to my github - Thanks :)
+ * @mygithub    https://github.com/ChristopheMalo    
+*/
+/**
+/**
+ * -------------------------
+ * Font
+ * -------------------------
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+/**
+ * -------------------------
+ * Generique
+ * -------------------------
+ */
+body {
+    background-color: #7878a1;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px; /* Font base - overwrite boostrap font-size of 14 px */
+}
+
+
+/**
+ * -------------------------
+ * Structure
+ * -------------------------
+ */
+#game-container {
+    margin-top: 20px;
+}
+#jeu {
+    width: 600px;
+    height: 400px;
+    border: 2px black solid;
+    background: url('../images/tp_04/fond.png');
+}
+#soucoupe {
+    z-index: 200; 
+    position: absolute; 
+    top: 20px; 
+    left: 70px;
+}
+#bon {
+    z-index: 100; 
+    position: absolute; 
+    display: none;
+}
+#mauvais {
+    z-index: 100; 
+    position: absolute; 
+    display: none;
+}
+  
