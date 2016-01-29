@@ -74,5 +74,31 @@ $(function() {
             }
         }
     });
+    
+    
+    // Fonction pour afficher vache et voiture alétoirement
+    function afficheCibles() {
 
+        var cibleX = Math.floor(Math.random() * 500)+ 20;   // Abscisse
+        var cibleY = Math.floor(Math.random() * 300)+ 20;   // Ordonnée
+        var cibleType = Math.floor(Math.random() * 2);      // Type -> Vache ou voiture
+
+        if (cibleType === 0) {
+
+            $('#bon').css('top', cibleY).css('left', cibleX);
+            $('#bon').show();
+            $('#mauvais').css('display','none');
+
+        } else {
+
+            $('#mauvais').css('top', cibleY).css('left', cibleX);
+            $('#mauvais').show();
+            $('#bon').css('display','none');
+
+        }
+    }
+    
+    
+    setInterval(afficheCibles, 2000); // Affiche voitures et vaches aléatoirement
+ 
 });
