@@ -45,6 +45,7 @@ body {
     height: 400px;
     border: 2px black solid;
     background: url('../images/tp_04/fond.png');
+    position: relative;
 }
 #soucoupe {
     z-index: 200; 
