@@ -19,4 +19,11 @@ $(function() {
             console.log('La deuxième zone a été mise à jour');
         });
     });
+    
+    // Charger une partie d'un fichier
+    $('#majPremierB').click(function() {
+        $('#premier').load('../files/cours_12/maj1.html #modifMaj1b', function() {
+        console.log('La première zone a été mise à jour avec une partie du fichier');
+    });
+});
 });
