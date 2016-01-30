@@ -23,7 +23,20 @@ $(function() {
     // Charger une partie d'un fichier
     $('#majPremierB').click(function() {
         $('#premier').load('../files/cours_12/maj1.html #modifMaj1b', function() {
-        console.log('La première zone a été mise à jour avec une partie du fichier');
+            console.log('La première zone a été mise à jour avec une partie du fichier');
+        });
     });
-});
+    
+    // Passer des paramètres à un programme PHP
+    // 1ère forme
+    $('#action').click(function() {
+        var param = 'l=' + $('#ref').val();
+        console.log('param : ' + param);
+        $('#r').load('../files/cours_12/proverbes.php', param);
+    });
+    
+    // 2ème forme - en passant un objet en 2ème argument de la méthode load
+    // Valeur passée par une requête http POST donc les données doivent être récupérées en POST
+    // $('sel').load('http://www.url-site.com/page-test.php', { id:20, nom: 'Toto'});
+
 });
