@@ -1,0 +1,21 @@
+{ 
+  "menu": "Fichier", 
+  "commande": [ 
+      {
+          "nomCde": "Nouveau", 
+          "action": "CreateDoc"
+      }, 
+      {
+          "nomCde": "Ouvrir", 
+          "action": "OpenDoc"
+      }, 
+      {
+          "nomCde": "Enregistrer sous",
+          "action": "SaveAs"
+      },
+      {
+          "nomCde": "Fermer",
+          "action": "CloseDoc"
+      }
+   ] 
+}
