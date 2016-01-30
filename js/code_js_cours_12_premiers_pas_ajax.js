@@ -33,7 +33,8 @@ $(function() {
     // 1ère forme
     $('#action').click(function() {
         var param = 'l=' + $('#ref').val();
-        console.log('param : ' + param);
+        //console.log('param : ' + param); // Debug
+        $('#r').html('<img src="../images/cours_12/ajax-loader.gif">');
         $('#r').load('../files/cours_12/proverbes.php', param);
     });
     
