@@ -13,3 +13,4 @@ Simplification du développement javascript avec jQuery
 - Files d'attente et timer
 - Textes et images
 - Formulaires et tableaux
+- Ajax
