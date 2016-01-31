@@ -23,6 +23,13 @@
             body {
                 margin-bottom: 50px;
             }
+            #donnees {
+                background-color: #7878a1;
+                margin-top: 20px;
+            }
+            #message {
+                border: solid 1px #948b9d;
+            }
         </style>
     </head>
     <body>
@@ -48,6 +55,13 @@
                 <h3>La fonction $.ajax()</h3>
                 <button id="action" class="btn btn-lg btn-info">Lancer la requête AJAX</button>
                 <p>La réponse est visible dans la console</p>
+            </div>
+            
+            <div class="row">
+                <h3>Évènements associés à une requête Ajax</h3>
+                <button id="action2" class="btn btn-lg btn-info">Lancer la requête AJAX</button>
+                <div id="donnees"></div>
+                <div id="message"></div>
             </div>
             
         </div>
