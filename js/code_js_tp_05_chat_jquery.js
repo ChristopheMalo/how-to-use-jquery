@@ -1,7 +1,8 @@
 /* 
  * Code Javascript TP 05 - Un chat en jQuery
  * 
- * @AméliorationsPossibles     
+ * @AméliorationsPossibles
+ *      Améliorer le système de raffraichissement du message - temps trop juste pour saisir le message     
  *      Permettre aux chatteurs d'utiliser un avatar graphique ;
  *      Autoriser des messages sur plusieurs lignes ;
  *      Améliorer la mise en forme des messages postés en affectant une couleur d'arrière-plan différente un message sur deux ;
