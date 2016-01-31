@@ -14,3 +14,4 @@ Simplification du développement javascript avec jQuery
 - Textes et images
 - Formulaires et tableaux
 - Ajax
+- Les plug-ins jQuery
