@@ -15,3 +15,4 @@ Simplification du développement javascript avec jQuery
 - Formulaires et tableaux
 - Ajax
 - Les plug-ins jQuery
+- jQuery UI
