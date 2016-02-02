@@ -1,0 +1,104 @@
+/**
+ * Cours 15 jQuery - jQuery UI
+ * Cours jQuery OpenClassrooms
+ * Adaptation Christophe Malo
+ *
+ * @project     jQuery UI
+ * @namefile    cours_15.css
+ * @fileversion 1.0.0
+ * @cssversion  css3
+ * @author      Christophe Malo
+ * @copyright   2016 by the author & openclassrooms
+ * @license     no license - free to use - just link to my github - Thanks :)
+ * @mygithub    https://github.com/ChristopheMalo    
+*/
+/**
+/**
+ * -------------------------
+ * Font
+ * -------------------------
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+/**
+ * -------------------------
+ * Generique
+ * -------------------------
+ */
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px; /* Font base - overwrite boostrap font-size of 14 px */
+    margin-bottom: 350px;
+}
+
+
+/**
+ * -------------------------
+ * Structure
+ * -------------------------
+ */
+#content-drag img {
+    cursor: move;
+    width: 200px;
+}
+#drag-div{
+    border: 1px black solid;
+    cursor: move;
+    height: 150px;
+    width: 150px;
+}
+#drag-div p {
+    text-align: center;
+    line-height: 150px;
+    margin: 0;
+}
+#contentresize {
+    width: 300px;
+}
+#resizable {
+    width: 150px; height: 150px; padding: 0.5em;
+}
+#resizable h3 {
+    text-align: center; margin: 0;
+}
+#dialog1b,
+#dialog2b {
+    display: none;
+}
+#contenu {
+    display: none;
+    background-color: #aaeae1;
+    border: 1px gray solid;
+    height: 240px; 
+    width: 240px; 
+}
+#contenu h3 { 
+    background-color: #777;
+    margin: 0; 
+    padding: 0.4em; 
+    text-align: center; 
+}
+#contenu p {
+    padding: 5px;
+}
+#contenu2 { 
+    background-color: #aaeae1; 
+    border: 4px gray solid;
+    color: black;
+    position: relative;
+        left: 300px;
+    width: 100px;
+}
+#contenu2 h3 {
+    background-color: #777;
+    margin: 0; 
+    padding: 0.4em; 
+    text-align: center; 
+}
+#pool-ball {
+    position: relative;
+    width: 100px
+}
+#pool-buttons {
+    margin-bottom: 20px;
+}
