@@ -78,6 +78,7 @@ $(function() {
     
     
     // Animation - animate()
+    // J'ai remplacé toggle par click
     $('#contenu2').click(
         function() {
             $( '#contenu2').animate({
@@ -94,5 +95,16 @@ $(function() {
                 width: 100
             }, 1000 );
         }
-    );  
+    );
+    
+    
+    // Modèle de progression
+    $('#easeOutElastic').click( function() {
+        $('#pool-ball').css('left','0px');
+        $('#pool-ball').animate({ left: '+=200'}, 3000, 'easeOutElastic' );
+    });  
+    $('#easeInOutBack').click( function() {
+        $('#pool-ball').css('left','200px');
+        $('#pool-ball').animate({ left: '-=200'}, 3000, 'easeInOutBack' );
+    });  
 });

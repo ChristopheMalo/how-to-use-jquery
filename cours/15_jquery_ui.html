@@ -13,6 +13,7 @@
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css"  href="../css/cours_15.css" media="all">
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,70 +21,6 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <style>
-            body {
-                margin-bottom: 350px;
-            }
-            #content-drag img {
-                cursor: move;
-                width: 200px;
-            }
-            #drag-div{
-                border: 1px black solid;
-                cursor: move;
-                height: 150px;
-                width: 150px;
-            }
-            #drag-div p {
-                text-align: center;
-                line-height: 150px;
-                margin: 0;
-            }
-            #contentresize {
-                width: 300px;
-            }
-            #resizable {
-                width: 150px; height: 150px; padding: 0.5em;
-            }
-            #resizable h3 {
-                text-align: center; margin: 0;
-            }
-            #dialog1b,
-            #dialog2b {
-                display: none;
-            }
-            #contenu {
-                display: none;
-                background-color: #aaeae1;
-                border: 1px gray solid;
-                height: 240px; 
-                width: 240px; 
-            }
-            #contenu h3 { 
-                background-color: #777;
-                margin: 0; 
-                padding: 0.4em; 
-                text-align: center; 
-            }
-            #contenu p {
-                padding: 5px;
-            }
-            #contenu2 { 
-                background-color: #aaeae1; 
-                border: 4px gray solid;
-                color: black;
-                position: relative;
-                    left: 300px;
-                width: 100px;
-            }
-            #contenu2 h3 {
-                background-color: #777;
-                margin: 0; 
-                padding: 0.4em; 
-                text-align: center; 
-            }
-
-        </style>
     </head>
     <body>
         <!-- Section Contenu
@@ -191,6 +128,16 @@
                     <h3>Cliquez ici</h3>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
                 </div>
+            </div>
+            
+            <div class="row">
+                <h3>Animation - modèle de progression</h3>
+                <div id="pool-buttons">
+                    <button id="easeOutElastic" class="btn btn-lg btn-info">Effet easeOutElastic</button>
+                    <button id="easeInOutBack" class="btn btn-lg btn-info">Effet easeInOutBack</button>
+                </div>
+                
+                <img id="pool-ball" src="../images/cours_15/pool_ball_1.png" alt="pool-ball">
             </div>
             
         </div>
