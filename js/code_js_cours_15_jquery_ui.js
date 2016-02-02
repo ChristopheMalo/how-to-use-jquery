@@ -68,11 +68,31 @@ $(function() {
     $('#onglets').tabs();
     
     
-    // Animation
+    // Animation - show - hide - toggle - effect
     $('#anim1').click(function() {
        $('#contenu').show('explode'); 
     });
     $('#anim2').click(function() {
        $('#contenu').hide('explode'); 
     });
+    
+    
+    // Animation - animate()
+    $('#contenu2').click(
+        function() {
+            $( '#contenu2').animate({
+                backgroundColor: '#fff',
+                color: 'red',
+                left: '-=200',
+                width: 500
+            }, 1000 );
+            
+            $('#contenu2').animate({
+                backgroundColor: '#aaeae1',
+                color: 'black',
+                left: '+=200',
+                width: 100
+            }, 1000 );
+        }
+    );  
 });
