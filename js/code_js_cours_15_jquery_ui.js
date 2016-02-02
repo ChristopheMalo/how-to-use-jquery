@@ -62,4 +62,8 @@ $(function() {
             }
         }); 
     });
+    
+    
+    // Afficher des onglets
+    $('#onglets').tabs();
 });
