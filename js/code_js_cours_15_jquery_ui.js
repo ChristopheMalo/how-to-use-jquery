@@ -72,4 +72,7 @@ $(function() {
     $('#anim1').click(function() {
        $('#contenu').show('explode'); 
     });
+    $('#anim2').click(function() {
+       $('#contenu').hide('explode'); 
+    });
 });
