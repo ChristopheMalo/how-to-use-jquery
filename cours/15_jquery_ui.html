@@ -42,8 +42,17 @@
             #contentresize {
                 width: 300px;
             }
-            #resizable { width: 150px; height: 150px; padding: 0.5em; }
-            #resizable h3 { text-align: center; margin: 0; }
+            #resizable {
+                width: 150px; height: 150px; padding: 0.5em;
+            }
+            #resizable h3 {
+                text-align: center; margin: 0;
+            }
+            #dialog1b,
+            #dialog2b {
+                display: none;
+            }
+            
         </style>
     </head>
     <body>
@@ -91,6 +100,26 @@
                     <div>Contenu du bloc 4</div>
                     <h3><a href="#">Titre du bloc 5</a></h3>
                     <div>Contenu du bloc 5</div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <h3>Sélection de date - datepicker()</h3>
+                <div class="form-group">
+                    <label for="datepicker">Choisir une date en cliquant dans le champ de saisie</label>
+                    <input type="text" id="datepicker" class="form-control">
+                </div>
+            </div>
+            
+            <div class="row">
+                <h3>Boite de dialogue personnalisée - dialog()</h3>
+                <button id="dialog1" class="btn btn-lg btn-info">Dialog 1</button>
+                <button id="dialog2" class="btn btn-lg btn-info">Dialog 2</button>
+                <div id="dialog1b" title="Boîte de dialogue de base">
+                    <p>Cette boîte de dialogue peut être redimensionnée, déplacée et fermée.</p>
+                </div>
+                <div id="dialog2b" title="Modifier Arrière-plan">
+                    <p>Voulez-vous un arrière-plan jaune ?</p>
                 </div>
             </div>
             
