@@ -66,4 +66,10 @@ $(function() {
     
     // Afficher des onglets
     $('#onglets').tabs();
+    
+    
+    // Animation
+    $('#anim1').click(function() {
+       $('#contenu').show('explode'); 
+    });
 });

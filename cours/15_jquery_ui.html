@@ -52,7 +52,22 @@
             #dialog2b {
                 display: none;
             }
-            
+            #contenu {
+                display: none;
+                background-color: #aaeae1;
+                border: 1px gray solid;
+                height: 240px; 
+                width: 240px; 
+            }
+            #contenu h3 { 
+                background-color: #777;
+                margin: 0; 
+                padding: 0.4em; 
+                text-align: center; 
+            }
+            #contenu p {
+                padding: 5px;
+            }
         </style>
     </head>
     <body>
@@ -144,6 +159,14 @@
                 </div>
             </div>
             
+            <div class="row">
+                <h3>Animation - show(), hide(), toggle() et effect()</h3>
+                <button id="anim1" class="btn btn-lg btn-info">Anime 1</button>
+                <div id="contenu">
+                    <h3>Un titre</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                </div>
+            </div>
             
         </div>
         <script src="../jquery/jquery-2.1.4.js"></script>
