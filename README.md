@@ -16,3 +16,4 @@ Simplification du développement javascript avec jQuery
 - Ajax
 - Les plug-ins jQuery
 - jQuery UI
+- Création de plugin
