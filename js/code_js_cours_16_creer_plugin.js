@@ -21,3 +21,16 @@
 //        return this;
 //    };
 //})(jQuery);
+
+
+$(function() {
+    // Utiliser le plugin changeText
+   $('#action').click(function() {
+       $('.grasItaliqueSouligne').changeText();
+   }); 
+   
+   // Utiliser le plugin rebond
+   $('#action2').click(function() {
+       $('#ball').rebond(20, 100);
+   });
+});
