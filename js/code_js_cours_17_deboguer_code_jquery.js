@@ -46,5 +46,5 @@ $(function() {
 //    window.onerror = gestionErreurs;
 
 
-    // Utiliser firebug
+    // Utiliser firebug ou les outils dev des navigateurs
 });
