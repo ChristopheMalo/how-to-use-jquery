@@ -17,3 +17,4 @@ Simplification du développement javascript avec jQuery
 - Les plug-ins jQuery
 - jQuery UI
 - Création de plugin
+- Déboguer le code
