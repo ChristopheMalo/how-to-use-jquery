@@ -146,5 +146,5 @@ console.log('Objet jQuery : ' + varJq);
 /* Conversion objet jQuery en élément DOM  */
 var imgDocs = $('img').get();
 console.log(imgDocs);
-console.log('Img index 2 : ' + imgDocs[2])
+console.log('Img index 2 : ' + imgDocs[2]);
 console.log(imgDocs[2]);
