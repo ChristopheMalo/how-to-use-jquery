@@ -1,0 +1,89 @@
+/**
+ * Activité notée Partie 3 - jQuery
+ * Donnez de l'allure au générateur de formulaires
+ * Cours jQuery OpenClassrooms
+ * Adaptation Christophe Malo
+ *
+ * @project     jQuery
+ * @namefile    style.css
+ * @fileversion 1.0.0
+ * @cssversion  css3
+ * @author      Christophe Malo
+ * @copyright   2016 by the author & openclassrooms
+ * @license     no license - free to use - just link to my github - Thanks :)
+ * @mygithub    https://github.com/ChristopheMalo    
+*/
+/**
+/**
+ * -------------------------
+ * Font
+ * -------------------------
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+/**
+ * -------------------------
+ * Generique
+ * -------------------------
+ */
+html, body {
+    height: 100%;
+}
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px; /* Font base - overwrite boostrap font-size of 14 px */
+}
+
+
+/**
+ * -------------------------
+ * Structure
+ * -------------------------
+ */
+.container-fluid, .row {
+    height: 100%;
+}
+
+/* Conteneur gauche */
+#gauche {
+    background-color: #EFECCA;
+    height: 100%;
+    padding-top: 10px;
+    min-height: 100%;
+}
+#gauche label {
+    font-weight: 600;
+}
+
+/* Conteneur droit */
+#droite {
+    background-color: #CEFFF8;
+    height: 100%;
+    padding-top: 10px;
+    min-height: 100%;
+}
+#info,
+#content-button {
+    font-weight: 400;
+}
+#droite label {
+    font-weight: 300;
+}
+#intro,
+#content-button {
+    text-align: center
+}
+#content-button button {
+    margin: 10px;
+}
+hr {
+    border-top: 2px solid #aaa
+}
+#annuler {
+    margin: 8px;
+}
+#droite button:hover:enabled {
+-webkit-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+   -moz-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+        box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
