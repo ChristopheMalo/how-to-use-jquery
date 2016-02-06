@@ -41,7 +41,7 @@ $(function() {
                         '</label>' +
                         '<input id="contentText" type="text" class="form-control">' +
                     '</div>' +
-                    '<button id="validButton" class="btn btn-info push-right">ok</button>' +
+                    '<button id="validButton" class="btn btn-info">ok</button>' +
                 '</div>');
         
         $('#validButton').click(function() {
@@ -66,7 +66,7 @@ $(function() {
                         '</label>' +
                         '<input id="contentText" type="text" class="form-control">' +
                     '</div>' +
-                    '<button id="validButton" class="btn btn-info push-right">ok</button>' +
+                    '<button id="validButton" class="btn btn-info">ok</button>' +
                 '</div>');
         
         $('#validButton').click(function() {
@@ -86,7 +86,7 @@ $(function() {
                         '</label>' +
                         '<input id="contentText" type="text" class="form-control">' +
                     '</div>' +
-                    '<button id="validButton" class="btn btn-info push-right">ok</button>' +
+                    '<button id="validButton" class="btn btn-info">ok</button>' +
                 '</div>');
         
         $('#validButton').click(function() {
