@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Activité partie 2 - jQuery - basé sur le MOOC Simplifiez vos développements Javascript avec jQuery - OpenClassrooms - Adaptation Christophe Malo">
+        <meta name="keywords" content="jQuery, Ajax, Javascript, HTML5, CSS3, Bootstrap">
+        <meta name="author" content="Christophe Malo">
+            
+        <title>Activité partie 2 - Un générateur de formulaires - jQuery</title>
+        
+        <!-- Appel de bootstrap (CDN) -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Appel CSS personnalisée -->
+        <link rel="stylesheet" type="text/css"  href="css/style.css" media="all">
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Section Contenu
+        ================================================== -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Conteneur recevant les éléments générés -->
+                <div id="gauche" class="col-xs-6"><form></form></div>
+                
+                <!-- Conteneur servant à construire les éléments -->
+                <div id="droite" class="col-xs-6">
+                    <p id="intro">Utilisez ces boutons pour créer votre formulaire</p>
+                    <p id="content-button">
+                        <button class="btn btn-info">Label</button>
+                        <button class="btn btn-info">Zone de texte</button>
+                        <button class="btn btn-info">Bouton</button>
+                    </p>
+                    
+                    <hr>
+                    
+                    <!-- Conteneur pour recevoir les éléments à construire -->
+                    <div id="construct-form"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Appel de jQuery (CDN) - dernière version en cours lors du développement -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <!-- Appel du fichier contenant le code jQuery -->
+        <script src="js/code_js_activite_partie2.js"></script>
+    </body>
+</html>
