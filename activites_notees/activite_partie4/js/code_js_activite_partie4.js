@@ -5,7 +5,7 @@
  * Intégration de Bootstrap dans le générateur à partir de l'activité 2
  * Pour cette nouvelle activité, j'ai utilisé le code développer lors de l'activité partie 2
  * 
- * Dans l'activité 2 j'ai utilisé html(), last() et append() à la place de after() et append()
+ * Dans l'activité 2 et 3 j'ai utilisé html(), last() et append() à la place de after() et append()
  * J'utilise donc ici de nouveau html(), last() et append()
  * 
  * Choix du formulaire de base - Orientation simple
@@ -29,7 +29,7 @@
  * Adaptation Christophe Malo
  *
  * @project         jQuery
- * @namefile        code_js_activite_partie3.js
+ * @namefile        code_js_activite_partie4.js
  * @fileversion     1.0.0
  * @jqueryversion   2.2.0
  * @author          Christophe Malo
